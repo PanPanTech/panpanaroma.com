@@ -1,11 +1,25 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
+import path from 'node:path';
 const site=JSON.parse(fs.readFileSync('content/site.json','utf8'));
 const products=JSON.parse(fs.readFileSync('content/catalog.json','utf8')).products;
 const blog=JSON.parse(fs.readFileSync('content/blog.json','utf8')).posts;
 const manifest=JSON.parse(fs.readFileSync('public/images/manifest.json','utf8'));
 const pending=products.filter(p=>p.releaseStatus!=='ready');
 for(const p of products){if(p.releaseStatus==='ready'){assert.equal(p.identityStatus,'verified',p.slug);for(const key of ['botanicalName','inci','extraction','origin'])assert.ok(p[key],`${p.slug}: ${key}`);}assert.ok(!('sourceOfferIds' in p)&&!('notes' in p),p.slug+' internal metadata');}
-for(const post of blog){if(post.status==='published'){assert.equal(post.reviewStatus,'approved',post.slug);assert.ok(post.publishedAt&&Number.isFinite(Date.parse(post.publishedAt)),post.slug+' publication date');}assert.ok(post.image.startsWith('/illustrations/'),post.slug+' neutral illustration');}
-if(site.publicLaunchApproved){assert.equal(site.origin,'https://panpanaroma.com');assert.equal(site.name,'PanPan Aroma');for(const key of ['hero','packaging','sets'])assert.ok(manifest[key].startsWith('/illustrations/'));assert.ok(!Object.keys(manifest.productImages||{}).length);}
-console.log(JSON.stringify({publicLaunchApproved:site.publicLaunchApproved,products:products.length,pendingEnquiryCandidates:pending.length,publishedArticles:blog.filter(p=>p.status==='published').length,note:'Pending products remain labelled sourcing enquiries, noindex, and excluded from product discovery. No pending specification is promoted to verified.'},null,2));
+const publicRoot=path.resolve('public');
+const assets=new Map((manifest.assets||[]).map(asset=>[asset.file,asset]));
+function checkImage(file){
+ assert.ok(typeof file==='string'&&file.startsWith('/')&&!file.startsWith('//'),'local image path');
+ const local=path.resolve(publicRoot,'.'+file);
+ assert.ok(local.startsWith(publicRoot+path.sep)&&fs.existsSync(local),file+' exists');
+ const asset=assets.get(file);assert.ok(asset?.alt&&asset.caption,file+' image description');
+ assert.ok(['photograph','catalogue-image','illustration'].includes(asset.kind),file+' image type');
+ assert.ok(!Object.keys(asset).some(key=>/sourceRelativePath|sourceAbsolutePath|sourceOfferIds/i.test(key)),file+' no internal source paths');
+ return asset;
+}
+for(const post of blog){if(post.status==='published'){assert.equal(post.reviewStatus,'approved',post.slug);assert.ok(post.publishedAt&&Number.isFinite(Date.parse(post.publishedAt)),post.slug+' publication date');}checkImage(post.image);}
+for(const [slug,file] of Object.entries(manifest.productImages||{})){assert.ok(products.some(p=>p.slug===slug),slug+' known product');checkImage(file);}
+if(manifest.productFallback){assert.equal(checkImage(manifest.productFallback).role,'packaging-option','generic image clearly identified as packaging');}
+if(site.publicLaunchApproved){assert.equal(site.origin,'https://panpanaroma.com');assert.equal(site.name,'PanPan Aroma');for(const key of ['hero','packaging','sets'])checkImage(manifest[key]);}
+console.log(JSON.stringify({publicLaunchApproved:site.publicLaunchApproved,products:products.length,pendingEnquiryCandidates:pending.length,publishedArticles:blog.filter(p=>p.status==='published').length,productPhotoMappings:Object.keys(manifest.productImages||{}).length,catalogueImages:[...assets.values()].filter(asset=>asset.kind==='catalogue-image').length,photographs:[...assets.values()].filter(asset=>asset.kind==='photograph').length,note:'Images are reviewed independently of supply specifications. Pending products remain sourcing enquiries, noindex, and excluded from product discovery; photographs do not promote unverified specifications.'},null,2));

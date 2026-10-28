@@ -1,44 +1,519 @@
 {
-  "hero": "/illustrations/hero-botanicals.svg",
-  "packaging": "/illustrations/packaging-study.svg",
+  "hero": "/images/catalogue/lavender-236e04579e24.jpg",
+  "packaging": "/images/catalogue/grapeseed-bab5f47084fd.webp",
   "sets": "/illustrations/collection-study.svg",
   "assets": [
     {
       "key": "hero",
       "file": "/illustrations/hero-botanicals.svg",
       "alt": "Illustration of amber bottles, neutral packaging and botanical branches",
-      "role": "illustration"
+      "role": "illustration",
+      "kind": "illustration",
+      "caption": "Original illustration of a sourcing or packaging concept."
     },
     {
       "key": "packaging",
       "file": "/illustrations/packaging-study.svg",
       "alt": "Illustration of a neutral amber bottle and carton packaging",
-      "role": "illustration"
+      "role": "illustration",
+      "kind": "illustration",
+      "caption": "Original illustration of a sourcing or packaging concept."
     },
     {
       "key": "sets",
       "file": "/illustrations/collection-study.svg",
       "alt": "Illustration of an unbranded bottle collection and gift-set concept",
-      "role": "illustration"
+      "role": "illustration",
+      "kind": "illustration",
+      "caption": "Original illustration of a sourcing or packaging concept."
     },
     {
       "key": "sourcing",
       "file": "/illustrations/sourcing-workbench.svg",
       "alt": "Illustration of amber bottles, botanical branches and a purchasing brief",
-      "role": "illustration"
+      "role": "illustration",
+      "kind": "illustration",
+      "caption": "Original illustration of a sourcing or packaging concept."
     },
     {
       "key": "quality",
       "file": "/illustrations/quality-study.svg",
       "alt": "Illustration of a sample bottle and product documentation review",
-      "role": "illustration"
+      "role": "illustration",
+      "kind": "illustration",
+      "caption": "Original illustration of a sourcing or packaging concept."
     },
     {
       "key": "aroma",
       "file": "/illustrations/aroma-study.svg",
       "alt": "Illustration of botanical aroma directions and an unlabelled amber bottle",
-      "role": "illustration"
+      "role": "illustration",
+      "kind": "illustration",
+      "caption": "Original illustration of a sourcing or packaging concept."
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Lavender Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "lavender",
+      "file": "/images/catalogue/lavender-236e04579e24.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Peppermint Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "peppermint",
+      "file": "/images/catalogue/peppermint-aee16184b6c8.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Tea Tree Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "tea-tree",
+      "file": "/images/catalogue/tea-tree-5765e205d05f.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Eucalyptus Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "eucalyptus",
+      "file": "/images/catalogue/eucalyptus-0afade80f36a.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Lemongrass Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "lemongrass",
+      "file": "/images/catalogue/lemongrass-d9d75d6ade60.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Sweet Orange Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "sweet-orange",
+      "file": "/images/catalogue/sweet-orange-bc658d34927f.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Lemon Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "lemon",
+      "file": "/images/catalogue/lemon-49e0f862047f.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Rosemary Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "rosemary",
+      "file": "/images/catalogue/rosemary-a0a893caebc0.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Frankincense Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "frankincense",
+      "file": "/images/catalogue/frankincense-c740979cfc18.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Cedarwood Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "cedarwood",
+      "file": "/images/catalogue/cedarwood-9768d88df0b8.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Geranium Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "geranium",
+      "file": "/images/catalogue/geranium-72a28042d6da.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Basil Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "basil",
+      "file": "/images/catalogue/basil-405bebcf7d51.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Bergamot Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "bergamot",
+      "file": "/images/catalogue/bergamot-58ff5b5baeb3.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Black Pepper Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "black-pepper",
+      "file": "/images/catalogue/black-pepper-75cc49b54db4.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Cardamom Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "cardamom",
+      "file": "/images/catalogue/cardamom-1e813b5180b4.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Cinnamon Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "cinnamon",
+      "file": "/images/catalogue/cinnamon-d87f97069017.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Citronella Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "citronella",
+      "file": "/images/catalogue/citronella-1941761f6e6f.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Clary Sage Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "clary-sage",
+      "file": "/images/catalogue/clary-sage-b515518a1584.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Clove Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "clove",
+      "file": "/images/catalogue/clove-be95a5233223.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Cypress Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "cypress",
+      "file": "/images/catalogue/cypress-1a6ba7589d0c.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Fennel Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "fennel",
+      "file": "/images/catalogue/fennel-ecadeddc48b9.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Fir Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "fir",
+      "file": "/images/catalogue/fir-54ea0ed3a65d.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Ginger Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "ginger",
+      "file": "/images/catalogue/ginger-275c46cb554b.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Grapefruit Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "grapefruit",
+      "file": "/images/catalogue/grapefruit-9f06a965b916.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Helichrysum Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "helichrysum",
+      "file": "/images/catalogue/helichrysum-1e5fbff4e7e7.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Lemon Eucalyptus Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "lemon-eucalyptus",
+      "file": "/images/catalogue/lemon-eucalyptus-7c611c573b59.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Marjoram Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "marjoram",
+      "file": "/images/catalogue/marjoram-b74ca99f359a.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Melissa Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "melissa",
+      "file": "/images/catalogue/melissa-5bb3668cc3d1.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Neroli Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "neroli",
+      "file": "/images/catalogue/neroli-7c20fb2a2194.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Palmarosa Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "palmarosa",
+      "file": "/images/catalogue/palmarosa-e015f1e13a0f.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Petitgrain Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "petitgrain",
+      "file": "/images/catalogue/petitgrain-99f52922c58e.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Spearmint Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "spearmint",
+      "file": "/images/catalogue/spearmint-f415e9531293.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Tangerine Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "tangerine",
+      "file": "/images/catalogue/tangerine-ebc74d139a88.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Thyme Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "thyme",
+      "file": "/images/catalogue/thyme-613e76ff328e.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Vetiver Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "vetiver",
+      "file": "/images/catalogue/vetiver-fb19944e94aa.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Ylang Ylang Essential Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 1080,
+      "height": 1080,
+      "key": "ylang-ylang",
+      "file": "/images/catalogue/ylang-ylang-eac8ef9f7967.jpg",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Jojoba Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 800,
+      "height": 800,
+      "key": "jojoba",
+      "file": "/images/catalogue/jojoba-9474c6c9e9bb.webp",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Sweet Almond Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 800,
+      "height": 800,
+      "key": "sweet-almond",
+      "file": "/images/catalogue/sweet-almond-4de62151f179.webp",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Grapeseed Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 800,
+      "height": 800,
+      "key": "grapeseed",
+      "file": "/images/catalogue/grapeseed-bab5f47084fd.webp",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Argan Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 800,
+      "height": 800,
+      "key": "argan",
+      "file": "/images/catalogue/argan-11b8cdb117ce.webp",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Castor Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 800,
+      "height": 800,
+      "key": "castor",
+      "file": "/images/catalogue/castor-0e886a128d5e.webp",
+      "role": "product-reference"
+    },
+    {
+      "kind": "catalogue-image",
+      "alt": "Rosehip Oil labelled packaging from the existing catalogue",
+      "caption": "Existing catalogue packaging reference. Final packaging and specification are confirmed with your quote.",
+      "width": 800,
+      "height": 800,
+      "key": "rosehip",
+      "file": "/images/catalogue/rosehip-dc7f33e77780.webp",
+      "role": "product-reference"
     }
   ],
-  "productImages": {}
+  "productImages": {
+    "lavender": "/images/catalogue/lavender-236e04579e24.jpg",
+    "peppermint": "/images/catalogue/peppermint-aee16184b6c8.jpg",
+    "tea-tree": "/images/catalogue/tea-tree-5765e205d05f.jpg",
+    "eucalyptus": "/images/catalogue/eucalyptus-0afade80f36a.jpg",
+    "lemongrass": "/images/catalogue/lemongrass-d9d75d6ade60.jpg",
+    "sweet-orange": "/images/catalogue/sweet-orange-bc658d34927f.jpg",
+    "lemon": "/images/catalogue/lemon-49e0f862047f.jpg",
+    "rosemary": "/images/catalogue/rosemary-a0a893caebc0.jpg",
+    "frankincense": "/images/catalogue/frankincense-c740979cfc18.jpg",
+    "cedarwood": "/images/catalogue/cedarwood-9768d88df0b8.jpg",
+    "geranium": "/images/catalogue/geranium-72a28042d6da.jpg",
+    "basil": "/images/catalogue/basil-405bebcf7d51.jpg",
+    "bergamot": "/images/catalogue/bergamot-58ff5b5baeb3.jpg",
+    "black-pepper": "/images/catalogue/black-pepper-75cc49b54db4.jpg",
+    "cardamom": "/images/catalogue/cardamom-1e813b5180b4.jpg",
+    "cinnamon": "/images/catalogue/cinnamon-d87f97069017.jpg",
+    "citronella": "/images/catalogue/citronella-1941761f6e6f.jpg",
+    "clary-sage": "/images/catalogue/clary-sage-b515518a1584.jpg",
+    "clove": "/images/catalogue/clove-be95a5233223.jpg",
+    "cypress": "/images/catalogue/cypress-1a6ba7589d0c.jpg",
+    "fennel": "/images/catalogue/fennel-ecadeddc48b9.jpg",
+    "fir": "/images/catalogue/fir-54ea0ed3a65d.jpg",
+    "ginger": "/images/catalogue/ginger-275c46cb554b.jpg",
+    "grapefruit": "/images/catalogue/grapefruit-9f06a965b916.jpg",
+    "helichrysum": "/images/catalogue/helichrysum-1e5fbff4e7e7.jpg",
+    "lemon-eucalyptus": "/images/catalogue/lemon-eucalyptus-7c611c573b59.jpg",
+    "marjoram": "/images/catalogue/marjoram-b74ca99f359a.jpg",
+    "melissa": "/images/catalogue/melissa-5bb3668cc3d1.jpg",
+    "neroli": "/images/catalogue/neroli-7c20fb2a2194.jpg",
+    "palmarosa": "/images/catalogue/palmarosa-e015f1e13a0f.jpg",
+    "petitgrain": "/images/catalogue/petitgrain-99f52922c58e.jpg",
+    "spearmint": "/images/catalogue/spearmint-f415e9531293.jpg",
+    "tangerine": "/images/catalogue/tangerine-ebc74d139a88.jpg",
+    "thyme": "/images/catalogue/thyme-613e76ff328e.jpg",
+    "vetiver": "/images/catalogue/vetiver-fb19944e94aa.jpg",
+    "ylang-ylang": "/images/catalogue/ylang-ylang-eac8ef9f7967.jpg",
+    "jojoba": "/images/catalogue/jojoba-9474c6c9e9bb.webp",
+    "sweet-almond": "/images/catalogue/sweet-almond-4de62151f179.webp",
+    "grapeseed": "/images/catalogue/grapeseed-bab5f47084fd.webp",
+    "argan": "/images/catalogue/argan-11b8cdb117ce.webp",
+    "castor": "/images/catalogue/castor-0e886a128d5e.webp",
+    "rosehip": "/images/catalogue/rosehip-dc7f33e77780.webp"
+  }
 }

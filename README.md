@@ -24,6 +24,7 @@ No credentials are required to read the source, run the tests or build. Hosted p
 - `app/` and `components/`: rendered pages, shared interface and request forms.
 - `content/`: website, product enquiry, buyer guide and blog content.
 - `lib/shared-inquiry.ts`: public enquiry service endpoint and payload mapping.
+- `public/images/catalogue/`: reviewed product and packaging references from the existing catalogue.
 - `public/illustrations/`: authored botanical and packaging illustrations.
 - `scripts/`, `worker/`, `.openai/`: build integration and hosting configuration.
 - `tests/`: local checks for catalogue filtering, public discovery, enquiry mapping and domain handling.
@@ -47,6 +48,8 @@ Legacy Sites D1 route, schema and authenticated inbox code remains for compatibi
 Product names are sourcing enquiry candidates until the required identity and specification fields are verified. Pending entries do not assert present inventory, purity, certifications or fixed commercial terms. Release checks retain the distinction between publicly readable sourcing information and verified product offers.
 
 The public source excludes raw supplier backups, original label files, private quotations, customer records, internal audit evidence and historical image source mappings. Changes to business claims, specifications and publishing status must be reviewed against the applicable product or project evidence.
+
+The image manifest maps 42 of the 55 product enquiry candidates to matching catalogue images. The remaining 13 candidates retain illustrations where an accurate neutral catalogue reference was not available. Selected category pages and the home page also use reviewed catalogue images; blog, set and other concept illustrations remain where appropriate. Catalogue composites and packaging references are not presented as newly photographed stock or proof of current specifications. Final packaging, labels and product details are confirmed with the quotation. Detailed source locations and image review evidence remain outside the public repository.
 
 ## Domain and hosting
 
