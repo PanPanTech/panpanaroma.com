@@ -1,0 +1,1 @@
+export default function NotFound(){return <main id="main" className="wrap notfound"><span className="eyebrow">PAGE NOT FOUND</span><h1>Let’s find<br/><em>a better path.</em></h1><p>The page you’re looking for is not in this collection.</p><a className="button" href="/essential-oils/">Explore Essential Oils ↗</a></main>}

@@ -1,0 +1,24 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const base=process.env.MIYA_QA_ORIGIN||'http://127.0.0.1:5183';
+const catalog=JSON.parse(fs.readFileSync('content/catalog.json','utf8')),pages=JSON.parse(fs.readFileSync('content/pages.json','utf8')).pages;
+const routes=['/', '/resources/', '/request-quote/','/request-samples/',...pages.map(p=>p.path),...catalog.products.map(p=>`/${p.category}/${p.slug}/`)];
+const results=[];
+for(let i=0;i<routes.length;i+=4){await Promise.all(routes.slice(i,i+4).map(async path=>{const r=await fetch(base+path);const html=await r.text();assert.equal(r.status,200,path);assert.match(html,/<h1(?:\s|>)/,path+' h1');assert.ok(html.includes('rel="canonical"'),path+' canonical');assert.ok(html.includes('noindex'),path+' release gate');results.push({path,status:r.status});}));}
+const robots=await (await fetch(base+'/robots.txt')).text();assert.match(robots,/Disallow:\s*\//);
+const map=await(await fetch(base+'/sitemap.xml')).text();assert.ok(!map.includes('/essential-oils/lavender/'));
+assert.equal((await fetch(base+'/this-page-does-not-exist/')).status,404);
+assert.equal((await fetch(base+'/api/inquiries')).status,401);
+const payload={kind:'quote',name:'QA Buyer',company:'Example Test Brand',email:`qa-${Date.now()}@example.test`,country:'United Kingdom',product:'Lavender essential oil',quantity:'500 bottles',packaging:'30 ml',customization:'Private label',timeline:'Planning',message:'AUTOMATED LOCAL QA ONLY',source:'/essential-oils/lavender/',consent:true};
+const post=(v,origin=base)=>fetch(base+'/api/inquiries',{method:'POST',headers:{'Content-Type':'application/json',Origin:origin},body:JSON.stringify(v)});
+assert.equal((await post({...payload,consent:false})).status,422);assert.equal((await post(payload,'https://unrelated.test')).status,403);assert.equal((await post({...payload,website:'spam'})).status,422);
+const submitted=await post(payload);assert.equal(submitted.status,201);const receipt=await submitted.json();assert.match(receipt.reference,/^MIYA-/);
+const sample=await post({...payload,kind:'sample',email:`sample-${Date.now()}@example.test`,quantity:'One sample of each oil'});assert.equal(sample.status,201);
+const contact=await post({kind:'contact',name:'QA Data Request',email:`contact-${Date.now()}@example.test`,message:'TEST ONLY: privacy contact route',consent:true});assert.equal(contact.status,201);
+const login=await fetch(base+'/signin-with-chatgpt?return_to=/inbox/',{redirect:'manual'});const cookie=login.headers.get('set-cookie')?.split(';')[0];assert.ok(cookie,'local mock sign in cookie');
+const adminHeaders={Cookie:cookie};let r=await fetch(base+'/api/inquiries?tests=1',{headers:adminHeaders});assert.equal(r.status,200);let data=await r.json();assert.ok(data.items.some(i=>i.kind==='sample'&&i.email.startsWith('sample-')),'sample saved separately');const item=data.items.find(i=>i.reference===receipt.reference);assert.ok(item,'saved request in owner inbox');assert.equal((await fetch(base+'/api/inquiries/'+item.id,{method:'PATCH',headers:{'Content-Type':'application/json'},body:JSON.stringify({status:'closed'})})).status,401);
+r=await fetch(base+'/api/inquiries/'+item.id,{method:'PATCH',headers:{...adminHeaders,'Content-Type':'application/json',Origin:base},body:JSON.stringify({status:'quoted'})});assert.equal(r.status,200);
+r=await fetch(base+'/api/inquiries?tests=1&status=quoted&format=csv',{headers:adminHeaders});const csv=await r.text();assert.equal(r.status,200);assert.ok(csv.includes(receipt.reference));assert.ok(!csv.includes('QA Data Request'));
+r=await fetch(base+'/api/inquiries?tests=0',{headers:adminHeaders});data=await r.json();assert.ok(!data.items.some(i=>i.reference===receipt.reference),'test lead excluded from normal metrics');
+fs.mkdirSync('outputs',{recursive:true});fs.writeFileSync('outputs/qa-local.json',JSON.stringify({testedAt:new Date().toISOString(),routes:results.sort((a,b)=>a.path.localeCompare(b.path)),routeCount:results.length,validation:'passed',persistence:'passed',adminAuthorization:'passed',statusUpdate:'passed',filteredCsv:'passed',draftIndexing:'blocked as intended',reference:receipt.reference},null,2));
+console.log(JSON.stringify({passed:true,pages:results.length,persistence:true,authorization:true,filteredCsv:true}));

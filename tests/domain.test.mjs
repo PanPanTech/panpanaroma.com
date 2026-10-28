@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {validateInquiry,safeCsvCell,sameOrigin} from '../lib/validation.ts';
+const valid={kind:'quote',name:'QA Buyer',company:'Example Brand',email:'qa@example.test',country:'United Kingdom',product:'Lavender oil',quantity:'500 bottles',packaging:'30 ml',customization:'Label',timeline:'Planning',message:'Test only',source:'/essential-oils/lavender/',consent:true};
+test('quote keeps its product and source',()=>{const r=validateInquiry(valid);assert.deepEqual(r.errors,{});assert.equal(r.data.product,valid.product);assert.equal(r.data.source,valid.source);});
+test('invalid email, missing consent and oversized brief rejected',()=>{assert.ok(validateInquiry({...valid,email:'bad',consent:false,message:'x'.repeat(3001)}).errors.message);assert.ok(validateInquiry({...valid,email:'bad'}).errors.email);assert.ok(validateInquiry({...valid,consent:false}).errors.consent);});
+test('contact supports data requests without purchase fields',()=>{const r=validateInquiry({kind:'contact',name:'Person',email:'person@example.test',message:'Please correct my record',consent:true});assert.deepEqual(r.errors,{});assert.equal(r.data.quantity,'Not applicable');});
+test('reject wrong kinds and data types',()=>{assert.ok(validateInquiry({...valid,kind:'admin'}).errors.kind);assert.ok(validateInquiry({...valid,company:{value:'x'}}).errors.company);});
+test('CSV neutralizes spreadsheet formulas and quotes values',()=>{assert.equal(safeCsvCell('=CMD()'),`"'=CMD()"`);assert.equal(safeCsvCell('a"b'),`"a""b"`);});
+test('reject cross-origin writes',()=>{assert.equal(sameOrigin(new Request('https://site.test/api',{headers:{origin:'https://other.test'}})),false);assert.equal(sameOrigin(new Request('https://site.test/api',{headers:{origin:'https://site.test'}})),true);});

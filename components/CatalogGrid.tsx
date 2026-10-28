@@ -1,0 +1,18 @@
+'use client';
+import {useState} from 'react';
+import {Search,ArrowUpRight} from 'lucide-react';
+import {aromaFamilies,aromaLabel,filterAromaItems} from '@/lib/aroma';
+import AromaArt from './AromaArt';
+type Card={id:string;name:string;image:string;href:string;category:string;aromaFamily?:string;aromaNotes?:string[]};
+export default function CatalogGrid({items,initialFamily=''}:{items:Card[];initialFamily?:string}){
+ const [query,setQuery]=useState(''),[family,setFamily]=useState(aromaFamilies.some(f=>f.id===initialFamily)&&items.some(p=>p.aromaFamily===initialFamily)?initialFamily:''),[sort,setSort]=useState('name');
+ const hasFamilies=items.some(p=>p.aromaFamily),filtered=filterAromaItems(items,query,family,sort);
+ const availableFamilies=aromaFamilies.filter(f=>items.some(p=>p.aromaFamily===f.id));
+ const clear=()=>{setQuery('');setFamily('');};
+ return <div className="catalog-area">
+  {hasFamilies&&<div className="aroma-browser"><div className="aroma-browser-heading"><div><span className="eyebrow">FOLLOW THE AROMA</span><h2>Find a scent direction.</h2></div><a className="text-link" href="/resources/essential-oil-aroma-families/">A guide to the families <ArrowUpRight size={14}/></a></div><div className="aroma-filters" role="group" aria-label="Filter by aroma family"><button type="button" aria-pressed={!family} onClick={()=>setFamily('')}>All aromas <span>{items.length}</span></button>{availableFamilies.map(f=><button type="button" key={f.id} aria-pressed={family===f.id} onClick={()=>setFamily(f.id)}><span className="aroma-dot" style={{background:f.color}}/>{f.label}<span>{items.filter(p=>p.aromaFamily===f.id).length}</span></button>)}</div><p className="aroma-reference-note">Aroma families are reference directions. Confirm the exact scent, botanical identity and material specification with a sample.</p></div>}
+  <div className="catalog-toolbar"><label className="search-input"><span className="sr-only">Search oils or aroma notes</span><input value={query} onChange={e=>setQuery(e.target.value)} placeholder={hasFamilies?'Search oils or aroma notes…':'Find an oil…'} type="search"/><Search size={17}/></label><div className="catalog-controls"><label>Sort<select value={sort} onChange={e=>setSort(e.target.value)}><option value="name">Name A–Z</option>{hasFamilies&&<option value="family">Aroma family</option>}</select></label><span className="micro" role="status">{filtered.length} OF {items.length} SELECTIONS</span></div></div>
+  {(query||family)&&<div className="active-filter"><span>{family?aromaLabel(family):'All aromas'}{query?` · “${query}”`:''}</span><button type="button" onClick={clear}>Clear filters</button></div>}
+  {filtered.length?<div className="product-grid catalog-grid">{filtered.map(p=><article className="product-card" key={p.id}><a href={p.href}><div className="product-image">{p.image?<img src={p.image} alt={`${p.name} historical packaging reference`} loading="lazy"/>:<AromaArt name={p.name} family={p.aromaFamily}/>}<span className="product-arrow"><ArrowUpRight size={19}/></span></div><span className="micro">{p.category==='carrier-oils'?'CARRIER OIL':p.category==='botanical-enquiries'?'SPECIALTY BOTANICAL ENQUIRY':aromaLabel(p.aromaFamily).toUpperCase()}</span><h3>{p.name}</h3><p>{p.aromaNotes?.length?p.aromaNotes.join(' · '):'Discuss specifications & packaging'}</p></a></article>)}</div>:<div className="empty-state"><h3>No matching oils</h3><p>Try another name or aroma family.</p><button className="text-link" type="button" onClick={clear}>Clear filters <ArrowUpRight size={14}/></button></div>}
+ </div>;
+}

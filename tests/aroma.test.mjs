@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {aromaFamilies,filterAromaItems} from '../lib/aroma.ts';
+const items=[{name:'Bergamot Essential Oil',aromaFamily:'citrus',aromaNotes:['zesty','fresh']},{name:'Lemon Essential Oil',aromaFamily:'citrus',aromaNotes:['bright','tart']},{name:'Basil Essential Oil',aromaFamily:'herbal',aromaNotes:['green','spicy']}];
+test('eight navigable aroma families have unique identifiers',()=>assert.equal(new Set(aromaFamilies.map(f=>f.id)).size,8));
+test('family filtering returns matching oils only',()=>assert.deepEqual(filterAromaItems(items,'','citrus').map(x=>x.name),['Bergamot Essential Oil','Lemon Essential Oil']));
+test('search combines names and aroma notes without case sensitivity',()=>assert.equal(filterAromaItems(items,'FRESH bergamot')[0].name,'Bergamot Essential Oil'));
+test('search applies within the chosen family',()=>assert.equal(filterAromaItems(items,'green','citrus').length,0));
+test('clearing filters restores all items in alphabetical order',()=>assert.deepEqual(filterAromaItems(items).map(x=>x.name),['Basil Essential Oil','Bergamot Essential Oil','Lemon Essential Oil']));
+test('family sorting does not mutate the original product order',()=>{const before=items.map(x=>x.name);assert.equal(filterAromaItems(items,'','','family')[0].aromaFamily,'citrus');assert.deepEqual(items.map(x=>x.name),before);});

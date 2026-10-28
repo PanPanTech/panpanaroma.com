@@ -1,0 +1,17 @@
+import catalog from '@/content/catalog.json';
+import content from '@/content/pages.json';
+import imageData from '@/public/images/manifest.json';
+import config from '@/content/site.json';
+export const site=config;
+export type Product={id:string;slug:string;name:string;category:string;tagline:string;description:string;botanicalName:string|null;inci:string|null;plantPart:string|null;extraction:string|null;origin:string|null;identityStatus:string;packaging:string[];releaseStatus:string;image:string|null;aromaFamily?:string;aromaNotes?:string[];materialClass?:string};
+export type ContentPage={path:string;type:string;title:string;eyebrow:string;heading:string;description:string;intro:string;sections:{heading:string;body:string[];bullets?:string[]}[];related:{label:string;href:string}[];seo:{title:string;description:string;keywords:string[]}};
+export const products=catalog.products as Product[];
+export const pages=content.pages as ContentPage[];
+export const images=imageData as {hero:string;packaging:string;sets:string;productImages:Record<string,string>;assets:{key:string;file:string;alt:string;role:string}[]};
+export const articles=pages.filter(p=>p.type==='article');
+export const categories=[{name:'Essential oils',href:'/essential-oils/',detail:'Botanical oils for your next collection',number:'01'},{name:'Carrier oils',href:'/carrier-oils/',detail:'A considered base for personal care',number:'02'},{name:'Fragrance oils',href:'/fragrance-oils/',detail:'Distinct scent directions, clearly specified',number:'03'},{name:'Massage oils',href:'/massage-oils/',detail:'Blends for spa and body-care projects',number:'04'}];
+export const productHref=(p:Product)=>`/${p.category}/${p.slug}/`;
+export const productImage=(p:Product)=>images.productImages?.[p.slug]||p.image||'';
+export const quoteHref=(name='',kind='quote',source='')=>`/request-${kind==='sample'?'samples':'quote'}/?product=${encodeURIComponent(name)}&source=${encodeURIComponent(source)}`;
+export const resolveProduct=(path:string)=>products.find(p=>productHref(p)===path);
+export const originUrl=(path:string)=>new URL(path,site.origin).toString();

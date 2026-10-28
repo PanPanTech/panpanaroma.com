@@ -1,0 +1,1361 @@
+{
+  "products": [
+    {
+      "id": "EO-LAVENDER",
+      "slug": "lavender",
+      "name": "Lavender Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your lavender essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [
+        "10 ml",
+        "30 ml"
+      ],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "floral",
+      "aromaNotes": [
+        "floral",
+        "herbaceous"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-PEPPERMINT",
+      "slug": "peppermint",
+      "name": "Peppermint Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your peppermint essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [
+        "10 ml",
+        "30 ml"
+      ],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "minty",
+      "aromaNotes": [
+        "cool",
+        "minty"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-TEA-TREE",
+      "slug": "tea-tree",
+      "name": "Tea Tree Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your tea tree essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [
+        "10 ml",
+        "30 ml"
+      ],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "minty",
+      "aromaNotes": [
+        "fresh",
+        "herbaceous"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-EUCALYPTUS",
+      "slug": "eucalyptus",
+      "name": "Eucalyptus Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your eucalyptus essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [
+        "10 ml",
+        "30 ml"
+      ],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "minty",
+      "aromaNotes": [
+        "fresh",
+        "camphor-like"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-LEMONGRASS",
+      "slug": "lemongrass",
+      "name": "Lemongrass Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your lemongrass essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [
+        "10 ml",
+        "30 ml"
+      ],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "citrus",
+      "aromaNotes": [
+        "lemon-like",
+        "green"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-SWEET-ORANGE",
+      "slug": "sweet-orange",
+      "name": "Sweet Orange Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your sweet orange essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [
+        "10 ml",
+        "30 ml"
+      ],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "citrus",
+      "aromaNotes": [
+        "sweet",
+        "zesty"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-LEMON",
+      "slug": "lemon",
+      "name": "Lemon Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your lemon essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [
+        "10 ml",
+        "30 ml"
+      ],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "citrus",
+      "aromaNotes": [
+        "bright",
+        "tart"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-ROSEMARY",
+      "slug": "rosemary",
+      "name": "Rosemary Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your rosemary essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [
+        "10 ml",
+        "30 ml"
+      ],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "herbal",
+      "aromaNotes": [
+        "green",
+        "aromatic"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-FRANKINCENSE",
+      "slug": "frankincense",
+      "name": "Frankincense Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your frankincense essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [
+        "10 ml",
+        "30 ml"
+      ],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "resinous",
+      "aromaNotes": [
+        "balsamic",
+        "woody"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-CEDARWOOD",
+      "slug": "cedarwood",
+      "name": "Cedarwood Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your cedarwood essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [
+        "10 ml"
+      ],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "woody",
+      "aromaNotes": [
+        "dry",
+        "woody"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-PATCHOULI",
+      "slug": "patchouli",
+      "name": "Patchouli Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your patchouli essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [
+        "10 ml"
+      ],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "earthy",
+      "aromaNotes": [
+        "deep",
+        "woody"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-GERANIUM",
+      "slug": "geranium",
+      "name": "Geranium Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your geranium essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [
+        "10 ml"
+      ],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "floral",
+      "aromaNotes": [
+        "rosy",
+        "green"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "CO-JOJOBA",
+      "slug": "jojoba",
+      "name": "Jojoba Oil",
+      "category": "carrier-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your jojoba oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [
+        "1 kg",
+        "25 kg"
+      ],
+      "releaseStatus": "draft",
+      "image": null,
+      "materialClass": "carrier-oil-candidate"
+    },
+    {
+      "id": "CO-SWEET-ALMOND",
+      "slug": "sweet-almond",
+      "name": "Sweet Almond Oil",
+      "category": "carrier-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your sweet almond oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [
+        "1 kg",
+        "25 kg"
+      ],
+      "releaseStatus": "draft",
+      "image": null,
+      "materialClass": "carrier-oil-candidate"
+    },
+    {
+      "id": "CO-GRAPESEED",
+      "slug": "grapeseed",
+      "name": "Grapeseed Oil",
+      "category": "carrier-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your grapeseed oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [
+        "1 kg",
+        "25 kg"
+      ],
+      "releaseStatus": "draft",
+      "image": null,
+      "materialClass": "carrier-oil-candidate"
+    },
+    {
+      "id": "CO-ARGAN",
+      "slug": "argan",
+      "name": "Argan Oil",
+      "category": "carrier-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your argan oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [
+        "1 kg",
+        "25 kg"
+      ],
+      "releaseStatus": "draft",
+      "image": null,
+      "materialClass": "carrier-oil-candidate"
+    },
+    {
+      "id": "CO-CASTOR",
+      "slug": "castor",
+      "name": "Castor Oil",
+      "category": "carrier-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your castor oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [
+        "1 kg",
+        "25 kg"
+      ],
+      "releaseStatus": "draft",
+      "image": null,
+      "materialClass": "carrier-oil-candidate"
+    },
+    {
+      "id": "CO-ROSEHIP",
+      "slug": "rosehip",
+      "name": "Rosehip Oil",
+      "category": "carrier-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your rosehip oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [
+        "1 kg",
+        "25 kg"
+      ],
+      "releaseStatus": "draft",
+      "image": null,
+      "materialClass": "carrier-oil-candidate"
+    },
+    {
+      "id": "EO-BASIL",
+      "slug": "basil",
+      "name": "Basil Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your basil essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [
+        "10 ml"
+      ],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "herbal",
+      "aromaNotes": [
+        "green",
+        "herbaceous",
+        "spicy"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-BERGAMOT",
+      "slug": "bergamot",
+      "name": "Bergamot Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your bergamot essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [
+        "10 ml"
+      ],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "citrus",
+      "aromaNotes": [
+        "citrus",
+        "floral",
+        "fresh"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-BLACK-PEPPER",
+      "slug": "black-pepper",
+      "name": "Black Pepper Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your black pepper essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [
+        "10 ml"
+      ],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "spicy",
+      "aromaNotes": [
+        "peppery",
+        "warm",
+        "dry"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-CAJEPUT",
+      "slug": "cajeput",
+      "name": "Cajeput Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your cajeput essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [
+        "10 ml"
+      ],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "herbal",
+      "aromaNotes": [
+        "camphoraceous",
+        "fresh",
+        "herbaceous"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-CARDAMOM",
+      "slug": "cardamom",
+      "name": "Cardamom Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your cardamom essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "spicy",
+      "aromaNotes": [
+        "warm",
+        "spicy",
+        "sweet"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-CARROT-SEED",
+      "slug": "carrot-seed",
+      "name": "Carrot Seed Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your carrot seed essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "earthy",
+      "aromaNotes": [
+        "earthy",
+        "woody",
+        "dry"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-CINNAMON",
+      "slug": "cinnamon",
+      "name": "Cinnamon Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your cinnamon essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [
+        "10 ml",
+        "30 ml"
+      ],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "spicy",
+      "aromaNotes": [
+        "warm",
+        "spicy",
+        "sweet"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-CITRONELLA",
+      "slug": "citronella",
+      "name": "Citronella Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your citronella essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [
+        "10 ml"
+      ],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "herbal",
+      "aromaNotes": [
+        "lemony",
+        "grassy",
+        "fresh"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-CLARY-SAGE",
+      "slug": "clary-sage",
+      "name": "Clary Sage Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your clary sage essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "herbal",
+      "aromaNotes": [
+        "herbaceous",
+        "floral",
+        "soft"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-CLOVE",
+      "slug": "clove",
+      "name": "Clove Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your clove essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [
+        "10 ml"
+      ],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "spicy",
+      "aromaNotes": [
+        "warm",
+        "spicy",
+        "woody"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-CORIANDER",
+      "slug": "coriander",
+      "name": "Coriander Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your coriander essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "spicy",
+      "aromaNotes": [
+        "spicy",
+        "herbaceous",
+        "sweet"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-CYPRESS",
+      "slug": "cypress",
+      "name": "Cypress Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your cypress essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [
+        "10 ml"
+      ],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "woody",
+      "aromaNotes": [
+        "woody",
+        "green",
+        "fresh"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-FENNEL",
+      "slug": "fennel",
+      "name": "Fennel Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your fennel essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "spicy",
+      "aromaNotes": [
+        "sweet",
+        "anise-like",
+        "herbaceous"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-FIR",
+      "slug": "fir",
+      "name": "Fir Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your fir essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "woody",
+      "aromaNotes": [
+        "coniferous",
+        "green",
+        "balsamic"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-GERMAN-CHAMOMILE",
+      "slug": "german-chamomile",
+      "name": "German Chamomile Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your german chamomile essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "floral",
+      "aromaNotes": [
+        "herbaceous",
+        "floral",
+        "sweet"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-GINGER",
+      "slug": "ginger",
+      "name": "Ginger Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your ginger essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [
+        "10 ml"
+      ],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "spicy",
+      "aromaNotes": [
+        "warm",
+        "spicy",
+        "earthy"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-GRAPEFRUIT",
+      "slug": "grapefruit",
+      "name": "Grapefruit Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your grapefruit essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [
+        "10 ml"
+      ],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "citrus",
+      "aromaNotes": [
+        "citrus",
+        "tart",
+        "fresh"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-HELICHRYSUM",
+      "slug": "helichrysum",
+      "name": "Helichrysum Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your helichrysum essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "herbal",
+      "aromaNotes": [
+        "herbaceous",
+        "honey-like",
+        "earthy"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-JUNIPER-BERRY",
+      "slug": "juniper-berry",
+      "name": "Juniper Berry Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your juniper berry essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [
+        "10 ml"
+      ],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "woody",
+      "aromaNotes": [
+        "woody",
+        "coniferous",
+        "fresh"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-LEMON-EUCALYPTUS",
+      "slug": "lemon-eucalyptus",
+      "name": "Lemon Eucalyptus Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your lemon eucalyptus essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "herbal",
+      "aromaNotes": [
+        "citrusy",
+        "fresh",
+        "green"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-MARJORAM",
+      "slug": "marjoram",
+      "name": "Marjoram Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your marjoram essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "herbal",
+      "aromaNotes": [
+        "warm",
+        "herbaceous",
+        "woody"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-MELISSA",
+      "slug": "melissa",
+      "name": "Melissa Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your melissa essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "herbal",
+      "aromaNotes": [
+        "lemony",
+        "green",
+        "herbaceous"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-MYRRH",
+      "slug": "myrrh",
+      "name": "Myrrh Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your myrrh essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [
+        "10 ml"
+      ],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "resinous",
+      "aromaNotes": [
+        "resinous",
+        "balsamic",
+        "earthy"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-NEROLI",
+      "slug": "neroli",
+      "name": "Neroli Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your neroli essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "floral",
+      "aromaNotes": [
+        "floral",
+        "citrus",
+        "green"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-NUTMEG",
+      "slug": "nutmeg",
+      "name": "Nutmeg Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your nutmeg essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "spicy",
+      "aromaNotes": [
+        "warm",
+        "spicy",
+        "woody"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-OREGANO",
+      "slug": "oregano",
+      "name": "Oregano Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your oregano essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "herbal",
+      "aromaNotes": [
+        "herbaceous",
+        "warm",
+        "spicy"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-PALMAROSA",
+      "slug": "palmarosa",
+      "name": "Palmarosa Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your palmarosa essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "floral",
+      "aromaNotes": [
+        "floral",
+        "rosy",
+        "green"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-PETITGRAIN",
+      "slug": "petitgrain",
+      "name": "Petitgrain Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your petitgrain essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "citrus",
+      "aromaNotes": [
+        "green",
+        "citrus",
+        "woody"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-ROMAN-CHAMOMILE",
+      "slug": "roman-chamomile",
+      "name": "Roman Chamomile Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your roman chamomile essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "floral",
+      "aromaNotes": [
+        "floral",
+        "herbaceous",
+        "apple-like"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-ROSE",
+      "slug": "rose",
+      "name": "Rose — Botanical Sourcing Enquiry",
+      "category": "botanical-enquiries",
+      "tagline": "Botanical sourcing enquiry; material specification to confirm.",
+      "description": "Discuss rose botanical material sourcing with our team. Material identity, extraction method and any dilution require confirmation before quotation.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "floral",
+      "aromaNotes": [
+        "floral",
+        "rosy",
+        "sweet"
+      ],
+      "materialClass": "specialty-botanical-enquiry"
+    },
+    {
+      "id": "EO-SANDALWOOD",
+      "slug": "sandalwood",
+      "name": "Sandalwood — Botanical Sourcing Enquiry",
+      "category": "botanical-enquiries",
+      "tagline": "Botanical sourcing enquiry; material specification to confirm.",
+      "description": "Discuss sandalwood botanical material sourcing with our team. Material identity, extraction method and any dilution require confirmation before quotation.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "woody",
+      "aromaNotes": [
+        "woody",
+        "soft",
+        "balsamic"
+      ],
+      "materialClass": "specialty-botanical-enquiry"
+    },
+    {
+      "id": "EO-SPEARMINT",
+      "slug": "spearmint",
+      "name": "Spearmint Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your spearmint essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "minty",
+      "aromaNotes": [
+        "minty",
+        "sweet",
+        "green"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-TANGERINE",
+      "slug": "tangerine",
+      "name": "Tangerine Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your tangerine essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [
+        "10 ml"
+      ],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "citrus",
+      "aromaNotes": [
+        "citrus",
+        "sweet",
+        "fresh"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-THYME",
+      "slug": "thyme",
+      "name": "Thyme Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your thyme essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [
+        "10 ml"
+      ],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "herbal",
+      "aromaNotes": [
+        "herbaceous",
+        "warm",
+        "spicy"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-VETIVER",
+      "slug": "vetiver",
+      "name": "Vetiver Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your vetiver essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [
+        "10 ml",
+        "30 ml"
+      ],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "earthy",
+      "aromaNotes": [
+        "earthy",
+        "woody",
+        "smoky"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-YLANG-YLANG",
+      "slug": "ylang-ylang",
+      "name": "Ylang Ylang Essential Oil",
+      "category": "essential-oils",
+      "tagline": "Wholesale sourcing for your selected specification.",
+      "description": "Discuss your ylang ylang essential oil sourcing requirements, preferred packaging and intended application with our team.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [
+        "10 ml"
+      ],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "floral",
+      "aromaNotes": [
+        "floral",
+        "sweet",
+        "rich"
+      ],
+      "materialClass": "essential-oil-candidate"
+    },
+    {
+      "id": "EO-JASMINE",
+      "slug": "jasmine",
+      "name": "Jasmine — Botanical Sourcing Enquiry",
+      "category": "botanical-enquiries",
+      "tagline": "Botanical sourcing enquiry; material specification to confirm.",
+      "description": "Discuss jasmine botanical material sourcing with our team. Material identity, extraction method and any dilution require confirmation before quotation.",
+      "botanicalName": null,
+      "inci": null,
+      "plantPart": null,
+      "extraction": null,
+      "origin": null,
+      "identityStatus": "pending",
+      "packaging": [],
+      "releaseStatus": "draft",
+      "image": null,
+      "aromaFamily": "floral",
+      "aromaNotes": [
+        "floral",
+        "sweet",
+        "rich"
+      ],
+      "materialClass": "specialty-botanical-enquiry"
+    }
+  ]
+}

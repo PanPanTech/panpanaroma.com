@@ -1,0 +1,44 @@
+{
+  "hero": "/illustrations/hero-botanicals.svg",
+  "packaging": "/illustrations/packaging-study.svg",
+  "sets": "/illustrations/collection-study.svg",
+  "assets": [
+    {
+      "key": "hero",
+      "file": "/illustrations/hero-botanicals.svg",
+      "alt": "Illustration of amber bottles, neutral packaging and botanical branches",
+      "role": "illustration"
+    },
+    {
+      "key": "packaging",
+      "file": "/illustrations/packaging-study.svg",
+      "alt": "Illustration of a neutral amber bottle and carton packaging",
+      "role": "illustration"
+    },
+    {
+      "key": "sets",
+      "file": "/illustrations/collection-study.svg",
+      "alt": "Illustration of an unbranded bottle collection and gift-set concept",
+      "role": "illustration"
+    },
+    {
+      "key": "sourcing",
+      "file": "/illustrations/sourcing-workbench.svg",
+      "alt": "Illustration of amber bottles, botanical branches and a purchasing brief",
+      "role": "illustration"
+    },
+    {
+      "key": "quality",
+      "file": "/illustrations/quality-study.svg",
+      "alt": "Illustration of a sample bottle and product documentation review",
+      "role": "illustration"
+    },
+    {
+      "key": "aroma",
+      "file": "/illustrations/aroma-study.svg",
+      "alt": "Illustration of botanical aroma directions and an unlabelled amber bottle",
+      "role": "illustration"
+    }
+  ],
+  "productImages": {}
+}
