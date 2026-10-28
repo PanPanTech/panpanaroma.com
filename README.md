@@ -24,8 +24,11 @@ No credentials are required to read the source, run the tests or build. Hosted p
 - `app/` and `components/`: rendered pages, shared interface and request forms.
 - `content/`: website, product enquiry, buyer guide and blog content.
 - `lib/shared-inquiry.ts`: public enquiry service endpoint and payload mapping.
-- `public/images/catalogue/`: reviewed product and packaging references from the existing catalogue.
+- `public/images/miyuki-10ml/`: authorized MIYUKI 10ml product and scene references.
+- `public/images/catalogue/`: reviewed unbranded carrier oil container references.
+- `public/images/unbranded/`: the reviewed generic Vetiver bottle reference.
 - `public/illustrations/`: authored botanical and packaging illustrations.
+- `content/image-policy.json`: current brand exclusions and blocked image hashes.
 - `scripts/`, `worker/`, `.openai/`: build integration and hosting configuration.
 - `tests/`: local checks for catalogue filtering, public discovery, enquiry mapping and domain handling.
 
@@ -49,7 +52,9 @@ Product names are sourcing enquiry candidates until the required identity and sp
 
 The public source excludes raw supplier backups, original label files, private quotations, customer records, internal audit evidence and historical image source mappings. Changes to business claims, specifications and publishing status must be reviewed against the applicable product or project evidence.
 
-The image manifest maps 42 of the 55 product enquiry candidates to matching catalogue images. The remaining 13 candidates retain illustrations where an accurate neutral catalogue reference was not available. Selected category pages and the home page also use reviewed catalogue images; blog, set and other concept illustrations remain where appropriate. Catalogue composites and packaging references are not presented as newly photographed stock or proof of current specifications. Final packaging, labels and product details are confirmed with the quotation. Detailed source locations and image review evidence remain outside the public repository.
+The image manifest maps 40 of the 55 product enquiry candidates to matching references: 33 MIYUKI 10ml images, six unbranded carrier oil containers and one generic Vetiver bottle. The remaining 15 candidates retain illustrations where an accurate matching reference was not available. The home page hero, packaging and set sections use reviewed MIYUKI 10ml imagery. Catalogue composites and packaging references are not presented as newly photographed stock or proof of current specifications. Visible claims on historical labels do not establish verified purity, organic certification or current supply specifications. Final packaging, labels and product details are confirmed with the quotation. Detailed source locations and image review evidence remain outside the public repository.
+
+MUMIANHUA / 木棉花 images are prohibited throughout this website under the current project policy. Do not restore earlier catalogue images or renamed copies. The release guard checks explicit image brands and the SHA256 of every public file, including unreferenced files. The 36 withdrawn derivatives remain in internal archives and prior Git history; repository history has not been rewritten.
 
 ## Domain and hosting
 

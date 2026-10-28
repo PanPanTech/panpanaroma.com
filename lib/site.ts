@@ -7,7 +7,7 @@ export type Product={id:string;slug:string;name:string;category:string;tagline:s
 export type ContentPage={path:string;type:string;title:string;eyebrow:string;heading:string;description:string;intro:string;sections:{heading:string;body:string[];bullets?:string[]}[];related:{label:string;href:string}[];seo:{title:string;description:string;keywords:string[]}};
 export const products=catalog.products as Product[];
 export const pages=content.pages as ContentPage[];
-export type ImageAsset={key:string;file:string;alt:string;role:string;kind?:'photograph'|'catalogue-image'|'illustration';caption?:string;width?:number;height?:number};
+export type ImageAsset={key:string;file:string;alt:string;role:string;brand?:string|null;kind?:'photograph'|'catalogue-image'|'illustration';caption?:string;width?:number;height?:number};
 export const images=imageData as {hero:string;packaging:string;sets:string;productFallback?:string;productImages:Record<string,string>;assets:ImageAsset[]};
 export const articles=pages.filter(p=>p.type==='article');
 export const categories=[{name:'Essential oils',href:'/essential-oils/',detail:'Botanical oils for your next collection',number:'01'},{name:'Carrier oils',href:'/carrier-oils/',detail:'A considered base for personal care',number:'02'},{name:'Fragrance oils',href:'/fragrance-oils/',detail:'Distinct scent directions, clearly specified',number:'03'},{name:'Massage oils',href:'/massage-oils/',detail:'Blends for spa and body-care projects',number:'04'}];
