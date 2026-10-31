@@ -1,9 +1,14 @@
 import handler from "vinext/server/fetch-handler";
 import { runWithConnectorBinding } from "../lib/connector-context";
 import type { ConnectorBinding } from "../lib/connector-contract.mjs";
+import { redirectApexToWww } from "./canonical-host";
 
 const worker = {
   fetch(request: Request, env: Cloudflare.Env, ctx: ExecutionContext<{ CONNECTORS?: ConnectorBinding }>) {
+    // Apex stays a custom domain on this Worker. Redirect before the app so a
+    // deploy that reattaches panpanaroma.com does not drop the 301 to www.
+    const redirect = redirectApexToWww(request);
+    if (redirect) return redirect;
     let binding = ctx.props?.CONNECTORS;
     // Local preview emulates the same request-scoped capability. This branch and
     // the auxiliary service binding are absent from production builds.

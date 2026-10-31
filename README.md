@@ -1,6 +1,6 @@
 # PanPan Aroma
 
-Source for [panpanaroma.com](https://panpanaroma.com), an English B2B website for essential oil sourcing, wholesale and private label projects.
+Source for [www.panpanaroma.com](https://www.panpanaroma.com), an English B2B website for essential oil sourcing, wholesale and private label projects.
 
 The GitHub repository stores application code. The existing OpenAI Sites project runs the application as a Cloudflare Worker. This project is not a GitHub Pages export.
 
@@ -58,4 +58,4 @@ MUMIANHUA / 木棉花 images are prohibited throughout this website under the cu
 
 ## Domain and hosting
 
-The production domain is `panpanaroma.com`. Its DNS is managed separately from GitHub. Keep canonical URLs and site metadata in `content/site.json` aligned with the active production domain. A push to `main` deploys the Worker to the owner's Cloudflare account once the Actions secrets in `MIGRATION.md` are set. That push does not change DNS until the `panpanaroma.com` zone is on that account and the Worker custom domains are attached. GitHub Pages is not part of this hosting path.
+The canonical production origin is `https://www.panpanaroma.com` (`content/site.json`). Requests to `https://panpanaroma.com` return 301 to that host with the same path and query. DNS for the zone is managed separately from GitHub. A push to `main` deploys the Worker to the owner's Cloudflare account once the Actions secrets in `MIGRATION.md` are set. That push does not change DNS until the `panpanaroma.com` zone is on that account and the Worker custom domains are attached. Both the apex and `www` stay in `deploy/cloudflare-worker.json` so the apex redirect keeps running inside Worker `panpanaroma`. GitHub Pages is not part of this hosting path.

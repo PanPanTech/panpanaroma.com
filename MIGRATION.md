@@ -83,7 +83,7 @@ The workflow:
 
 The deploy job summary records the Worker URL from the action output. It looks like `https://panpanaroma.<account-subdomain>.workers.dev`. The subdomain belongs to the Cloudflare account; this repository does not choose it.
 
-Confirm the public pages on that URL before changing DNS. The `workers.dev` hostname is public once the deploy succeeds. Form submissions from that origin succeed only if `https://inquiry.panpantechnology.com` allows it in CORS. Production CORS for `https://panpanaroma.com` is separate and must stay allowed.
+Confirm the public pages on that URL before changing DNS. The `workers.dev` hostname is public once the deploy succeeds. Form submissions from that origin succeed only if `https://inquiry.panpantechnology.com` allows it in CORS. Production CORS for the canonical origin `https://www.panpanaroma.com` is separate and must stay allowed.
 
 Pull requests run the test and build job only. They do not deploy.
 
@@ -100,10 +100,10 @@ Manual DNS, if you are not using Worker custom domains: create a proxied CNAME f
 
 Check both of these after the certificate is issued:
 
-- `https://panpanaroma.com`
-- `https://www.panpanaroma.com`
+- `https://www.panpanaroma.com` serves the site
+- `https://panpanaroma.com` returns 301 to the same path and query on `https://www.panpanaroma.com`
 
-The site canonical origin remains `https://panpanaroma.com` (`content/site.json`). Both hostnames serve this Worker.
+The canonical origin is `https://www.panpanaroma.com` (`content/site.json`). `metadataBase`, `robots.txt`, `sitemap.xml`, and JSON-LD use that origin. Both `panpanaroma.com` and `www.panpanaroma.com` stay in `deploy/cloudflare-worker.json` `custom_domains`, so the apex still reaches Worker `panpanaroma`. The Worker returns that 301 before the application handler. The redirect is in the Worker, so a later deploy that reattaches the apex custom domain keeps it.
 
 To stop publishing the `workers.dev` hostname after the custom domains work, set `"workers_dev": false` in `deploy/cloudflare-worker.json` and deploy again.
 
