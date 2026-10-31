@@ -69,6 +69,8 @@ Leave `CLOUDFLARE_ATTACH_CUSTOM_DOMAINS` unset for the first deploy. The Worker 
 
 Set the two required secrets before merging this workflow to `main` if the first push should deploy. If the first run fails because the secrets are missing, add them and re-run the workflow, or run it with **workflow_dispatch** on `main`.
 
+Paste each value as a single line, with no wrapping quotes. The deploy job still removes spaces, line breaks, and one pair of surrounding quotes before Wrangler runs. A line break left in the middle of `CLOUDFLARE_API_TOKEN` makes `Headers.set` reject the Authorization header. Re-create the token and save it again if a deploy still reports an invalid header value.
+
 ## 3. Deploy and open the preview URL
 
 Merging to `main`, pushing to `main`, or running the workflow manually starts `.github/workflows/deploy-cloudflare-worker.yml`.
