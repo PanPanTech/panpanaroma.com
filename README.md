@@ -15,7 +15,7 @@ node scripts/check-release.mjs
 npm run build
 ```
 
-`npm run dev` starts a loopback development preview. `npm run build` produces a deployable Worker and client assets under `dist/`; it does not upload or publish the website. `npm start` previews that built Worker locally. The Sites lifecycle tooling handles the hosted deployment. Preserve the existing identity in `.openai/hosting.json` when updating this site.
+`npm run dev` starts a loopback development preview. `npm run build` produces a deployable Worker and client assets under `dist/`; it does not upload or publish the website. `npm start` previews that built Worker locally from `dist/server/wrangler.json`. Publishing to the owner's Cloudflare account is `.github/workflows/deploy-cloudflare-worker.yml`. That workflow deploys a Worker with Wrangler. GitHub Pages is not used. Preserve `.openai/hosting.json` so the existing OpenAI Sites project can still deploy during the cutover. See `MIGRATION.md`.
 
 No credentials are required to read the source, run the tests or build. Hosted publishing and DNS changes require their respective account access. Keep local environment files, credentials, generated outputs and runtime state out of Git.
 
@@ -29,7 +29,7 @@ No credentials are required to read the source, run the tests or build. Hosted p
 - `public/images/unbranded/`: the reviewed generic Vetiver bottle reference.
 - `public/illustrations/`: authored botanical and packaging illustrations.
 - `content/image-policy.json`: current brand exclusions and blocked image hashes.
-- `scripts/`, `worker/`, `.openai/`: build integration and hosting configuration.
+- `scripts/`, `worker/`, `deploy/`, `.github/workflows/`, `.openai/`: build integration, Worker deploy config, and hosting configuration.
 - `tests/`: local checks for catalogue filtering, public discovery, enquiry mapping and domain handling.
 
 ## Enquiry forms
@@ -58,4 +58,4 @@ MUMIANHUA / 木棉花 images are prohibited throughout this website under the cu
 
 ## Domain and hosting
 
-The production domain is `panpanaroma.com`. Its DNS is managed separately from GitHub. Keep canonical URLs and site metadata in `content/site.json` aligned with the active production domain. A repository push alone does not change DNS or deploy the running Sites application.
+The production domain is `panpanaroma.com`. Its DNS is managed separately from GitHub. Keep canonical URLs and site metadata in `content/site.json` aligned with the active production domain. A push to `main` deploys the Worker to the owner's Cloudflare account once the Actions secrets in `MIGRATION.md` are set. That push does not change DNS until the `panpanaroma.com` zone is on that account and the Worker custom domains are attached. GitHub Pages is not part of this hosting path.

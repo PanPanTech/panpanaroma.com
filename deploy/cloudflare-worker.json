@@ -1,0 +1,5 @@
+{
+  "name": "panpanaroma",
+  "workers_dev": true,
+  "custom_domains": ["panpanaroma.com", "www.panpanaroma.com"]
+}
