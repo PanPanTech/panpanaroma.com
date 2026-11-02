@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import {site} from '@/lib/site';
+
+const GA_MEASUREMENT_ID = "G-QQJ398FJZB";
 
 export const metadata: Metadata = {
   metadataBase:new URL(site.origin),
@@ -22,7 +25,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body><a className="skip-link" href="#main">Skip to content</a><Header/>{children}<Footer/></body>
+      <body>
+        <Script id="ga4" strategy="beforeInteractive">
+          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_MEASUREMENT_ID}');`}
+        </Script>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="beforeInteractive"
+          async
+        />
+        <a className="skip-link" href="#main">Skip to content</a><Header/>{children}<Footer/>
+      </body>
     </html>
   );
 }
