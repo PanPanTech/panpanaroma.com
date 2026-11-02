@@ -69,15 +69,11 @@ jobs:
       - name: Build Worker
         run: npm run build
 
-      - name: Require Cloudflare secrets
+      - name: Normalize Cloudflare credentials
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        run: |
-          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
-            echo "Set the GitHub Actions secrets CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID before deploying. See MIGRATION.md."
-            exit 1
-          fi
+        run: node scripts/normalize-cloudflare-secrets.mjs
 
       - name: Prepare production Wrangler config
         env:
@@ -90,8 +86,8 @@ jobs:
         id: deploy
         uses: cloudflare/wrangler-action@v4
         with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          apiToken: ${{ env.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ env.CLOUDFLARE_ACCOUNT_ID }}
           packageManager: npm
           wranglerVersion: "4.92.0"
           command: deploy --config dist/server/wrangler.production.json --no-bundle --no-x-autoconfig
