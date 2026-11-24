@@ -24,8 +24,12 @@
 - 内链：博客 → 品类页（/essential-oils/、/carrier-oils/、/private-label-essential-oils/ 等）→ 询价表单。
 
 ## 关键词策略
-- TODO：GSC 数据待读取（本次体检时内置浏览器未登录 Google）。拿到数据后按“曝光高 + CTR < 1%”和“问句型查询排名 1–6 但 0 点击（AI 引用）”两类补写本节。
-- 主攻方向（待 GSC 验证）：wholesale essential oils supplier、bulk essential oils China、private label essential oils manufacturer、essential oil OEM、carrier oils wholesale。
+依据 GSC 2026-08-24 ~ 11-23（3 个月：1 点击 / 367 曝光 / 平均排名 35.9）。新站，量很小，先修技术问题再追词。
+- **主攻（商业意图，目前排名 60–90，要靠品类页 + 博客内链拉升）**：essential oils wholesale private label、essential oil distributors / suppliers、aroma oil wholesale、bulk / wholesale citrus oils supplier、private label essential oils、wholesale carrier oils、massage oil manufacturer。
+- **已有前 15 名的长尾（优先改标题 / 开头，争取点击）**：herb fragrance oils supplier（10）、essential oils order form（15）、spicy / woody essential oil suppliers（11–13）、aroma oil suppliers（7）、aromatherapy oils wholesale（9）。
+- **问句 / 对比型（AI 引用机会）**：fragrance oil vs essential oil for diffuser、essential vs fragrance oils → `/resources/essential-oils-vs-fragrance-oils` 开头给直接结论。
+- 意外但可接：3pl for essential oils usa、packaging huile essentielle（法语）—— 暂不专门追。
+- 排名靠前但 0 点击的博客：plan-first-wholesale-essential-oil-order（7.9）、aroma-shortlist-for-wholesale-buyers（5.9）、essential-oil-rfq-checklist（5.9）、resources/bulk-vs-bottled-essential-oils（7.4）→ 优先改 title/description。
 
 ## 技术
 - 框架：Next.js 风格 App Router，由 vinext/Vite 构建为 **Cloudflare Worker**（`npm run build` → `dist/`）。不是 GitHub Pages。
@@ -33,9 +37,11 @@
 - `.openai/hosting.json` 保留旧 OpenAI Sites 项目（过渡期，见 `MIGRATION.md`）。
 - 编辑源：⚠️ 工作区规则曾写“`../miya-essential-oils` 是唯一编辑源、本仓库是发布镜像”，但该目录无 Git 远程、最后提交 2026-10-27、没有 GA4，而 10-31 之后的部署 / 域名 / GA4 改动都只在本仓库。**现在线上 = 本仓库 `main`**。TODO：由用户确认是否把本仓库定为唯一编辑源，避免两边分叉。
 - 内容：`content/*.json`（site / pages / catalog / blog / image-policy）；`app/sitemap.ts`、`app/robots.ts` 由 `lib/discovery.ts` 生成（只收录 launch 后的页面、博客，不含 pending 产品）。
+- ⚠️ **URL 规范化 bug（2026-11-24 发现，未修）**：线上带斜杠网址 308 跳到不带斜杠，但 `<link rel="canonical">` 和 sitemap 都输出**带斜杠**网址 → 规范网址本身是跳转页。GSC 同一页面出现 www/非 www、带/不带斜杠、`?category=` / `?aroma=` 多个版本。修复时让 canonical、sitemap、内链、Worker 跳转统一成一种形式（二选一），并对筛选参数保持 canonical 指向无参数版本。
+- 索引（2026-11-24）：已编入 64；未编入 746 = robots 屏蔽 258、404 195、noindex 166（产品候选，预期内）、自动重定向 109、重复无规范 11、已发现/已抓取未编入各 3。
 - robots：禁止 `/api/`、`/inbox/`、`/request-quote/`、`/request-samples/`。
 - `llms.txt`：**尚无**（线上 404）。新增时放 `public/llms.txt` 或路由生成，并与 sitemap 同步。
-- GA4：`G-QQJ398FJZB`（媒体资源 561882177，账号 PanPanTech 414295528），代码在 `app/layout.tsx`，全站 page_view。
+- GA4：`G-QQJ398FJZB`（媒体资源 561882177，账号 PanPanTech 414295528），代码在 `app/layout.tsx`，全站 page_view。90 天（8-26 ~ 11-23）：78 会话，Direct 71（互动 5 秒，多为机器人 / 自访）、Organic 7；关键事件 0；81% 浏览量在首页。
 - 转化事件：**尚未实现**。应在 `components/RequestForm.tsx` 询价成功（`inquiryAccepted` 为真）时发 `generate_lead`（带 `form_type: quote|sample|contact`），并为 mailto / tel / WhatsApp 点击发 `contact_click`；之后在 GA4 标为关键事件。
 - 询盘表单 → `https://inquiry.panpantechnology.com/api/inquiries`（`lib/shared-inquiry.ts`），该服务 CORS 必须允许 `https://www.panpanaroma.com`。
 - 提交前：`node --test tests/*.test.mjs`、`node scripts/check-release.mjs`、`npm run build`。
