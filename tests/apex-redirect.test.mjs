@@ -21,6 +21,13 @@ test("apex redirects to www and keeps path and query", () => {
   );
 });
 
+test("apex adds the canonical trailing slash to page paths in one hop", () => {
+  assert.equal(location("https://panpanaroma.com/about"), "https://www.panpanaroma.com/about/");
+  assert.equal(location("https://panpanaroma.com/essential-oils?aroma=citrus"), "https://www.panpanaroma.com/essential-oils/?aroma=citrus");
+  assert.equal(location("https://panpanaroma.com/sitemap.xml"), "https://www.panpanaroma.com/sitemap.xml");
+  assert.equal(location("https://panpanaroma.com/llms.txt"), "https://www.panpanaroma.com/llms.txt");
+});
+
 test("www and other hosts are not redirected", () => {
   assert.equal(redirectApexToWww(new Request("https://www.panpanaroma.com/")), null);
   assert.equal(redirectApexToWww(new Request("https://www.panpanaroma.com/blog/?x=1")), null);
